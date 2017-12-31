@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9GAG RSS Feed, a free RSS feed source for 9GAG</title>
+    <meta name="keywords" lang="en-us" content="9GAG,RSS,ATOM,feed,free,ad-free,syndication,hot,trending,fresh,funny,nsfw,gif,girls,cosplay">
+    <meta name="keywords" lang="en" content="9GAG,RSS,ATOM,feed,free,ad-free,syndication,hot,trending,fresh,funny,nsfw,gif,girls,cosplay">
+    <meta name="keywords" lang="fr" content="9GAG,RSS,ATOM,feed,free,ad-free,syndication,hot,trending,fresh,funny,nsfw,gif,girls,cosplay">
+    <meta name="description" lang="en-us" content="The last 9GAG posts using a free RSS feed">
+    <meta name="description" lang="en" content="The last 9GAG posts using a free RSS feed">
+    <meta name="description" lang="fr" content="The last 9GAG posts using a free RSS feed">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>9GAG RSS Feed</h1>
+        <p>
+            Not so long ago, <a href="https://9gag.com" target="_blank">9GAG</a> was providing RSS
+            feeds. The functionality was removed, probably to force the users to visit the website
+            or to download the app. Since I didn't want to do any of those, I started to build my
+            own RSS feeds from their content. The project is now mature enough, so I decided to make
+            it available for free to everyone. Similar projects already exist, but they didn't meet
+            my requirements.
+        </p>
+        <p>
+            You will find below all feeds you can get at
+            <a href="https://9gag.com" target="_blank">9GAG</a>, from the usual "Hot", "Trending" or
+            "Fresh" feeds to the category-specific feeds. Feeds are updated every 2 minutes, and the
+            last 200 posts are made accessible. Once again, it is a free service, and no
+            advertisement is inserted at any point.
+        </p>
+        <p>
+            Add the feeds you want in your favorite feed reader, and you are good to go!
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Hot</h2>
+            <p>
+                Most popular posts, over 9000 points. Only the best of 9GAG, so updates are less
+                frequent.
+            </p>
+            <p>
+                <a href="rss/9GAG_-_Hot.atom" target="_blank" class="btn btn-danger pull-right">Feed &raquo;</a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Trending</h2>
+            <p>
+                Popular posts with at least 300 points. Regular updates, but some "not-so-really"
+                interesting posts in the feed.
+            </p>
+            <p>
+                <a href="rss/9GAG_-_Trending.atom" target="_blank" class="btn btn-warning pull-right">Feed &raquo;</a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Fresh</h2>
+            <p>
+                All posts in real time. Be the first to get the updates, but be ready to get a lot
+                of crap. I wouldn't recommend, except if you really have time to waste ;-)
+            </p>
+            <p>
+                <a href="rss/9GAG_-_Fresh.atom" target="_blank" class="btn btn-info pull-right  ">Feed &raquo;</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-xs-12" style="height:50px;"></div>
+    <h2>Other categories</h2>
+
+{% for i in range(0, feed_list | length) %}
+    {% if i % 12 == 0 %}
+    <div class="row">
+    {% endif %}
+    {% if i % 2 == 0 %}
+        <div class="col-sm-2">
+            <h4>{{ feed_list[i]['categ_name'] }}</h4>
+    {% endif %}
+            <a href={{ feed_list[i]['href'] }} target="_blank" class="btn btn-xs btn-success">{{ feed_list[i]['type'] }}</a>
+    {% if i % 2 != 0 %}
+        </div>
+    {% endif %}
+    {% if (i + 1) % 12 == 0 %}
+    </div>
+
+    <div class="col-xs-12" style="height:25px;"></div>
+
+    {% elif i + 1 == (feed_list | length) %}
+    </div>
+
+    <div class="col-xs-12" style="height:50px;"></div>
+
+    {% endif %}
+{% endfor %}
+    <footer>
+        <div class="row">
+            <div class="col-xs-6 text-right">
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="Free RSS feed for 9GAG!">Tweet</a>
+            </div>
+            <div class="col-xs-6 text-left">
+                <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-share-button" data-href="http://9gag-rss-feed.ovh/" data-layout="button_count"></div>
+            </div>
+        </div>
+
+        <!-- Start Open Web Analytics Tracker -->
+        <script type="text/javascript">
+        //<![CDATA[
+        var owa_baseUrl = 'http://15minutesoffame.be/analytics/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', '9db8965be4ba451bf6df9256e951e9d2']);
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
+        owa_cmds.push(['trackDomStream']);
+
+        (function() {
+            var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+            owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+            _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+            var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+        }());
+        //]]>
+        </script>
+        <!-- End Open Web Analytics Code -->
+    </footer>
+
+    <div class="col-xs-12" style="height:50px;"></div>
+
+</div>
+</body>
+</html>

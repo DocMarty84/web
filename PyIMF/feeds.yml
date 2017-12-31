@@ -1,0 +1,67 @@
+gag9:
+    feeds:
+        - {name: '9GAG - Hot', url: 'https://9gag.com/hot'}
+        - {name: '9GAG - Trending', url: 'https://9gag.com/trending'}
+        - {name: '9GAG - Fresh', url: 'https://9gag.com/fresh'}
+        - {name: '9GAG Anime and Manga - Fresh', url: 'https://9gag.com/anime-manga/fresh'}
+        - {name: '9GAG Anime and Manga - Hot', url: 'https://9gag.com/anime-manga/hot'}
+        - {name: '9GAG Ask 9GAG - Fresh', url: 'https://9gag.com/ask9gag/fresh'}
+        - {name: '9GAG Ask 9GAG - Hot', url: 'https://9gag.com/ask9gag/hot'}
+        - {name: '9GAG Awesome - Fresh', url: 'https://9gag.com/awesome/fresh'}
+        - {name: '9GAG Awesome - Hot', url: 'https://9gag.com/awesome/hot'}
+        - {name: '9GAG Car - Fresh', url: 'https://9gag.com/car/fresh'}
+        - {name: '9GAG Car - Hot', url: 'https://9gag.com/car/hot'}
+        - {name: '9GAG Comic - Fresh', url: 'https://9gag.com/comic/fresh'}
+        - {name: '9GAG Comic - Hot', url: 'https://9gag.com/comic/hot'}
+        - {name: '9GAG Country - Fresh', url: 'https://9gag.com/country/fresh'}
+        - {name: '9GAG Country - Hot', url: 'https://9gag.com/country/hot'}
+        - {name: '9GAG Animals - Fresh', url: 'https://9gag.com/cute/fresh'}
+        - {name: '9GAG Animals - Hot', url: 'https://9gag.com/cute/hot'}
+        - {name: '9GAG Dark Humor - Fresh', url: 'https://9gag.com/darkhumor/fresh'}
+        - {name: '9GAG Dark Humor - Hot', url: 'https://9gag.com/darkhumor/hot'}
+        - {name: '9GAG Food - Fresh', url: 'https://9gag.com/food/fresh'}
+        - {name: '9GAG Food - Hot', url: 'https://9gag.com/food/hot'}
+        - {name: '9GAG Funny - Fresh', url: 'https://9gag.com/funny/fresh'}
+        - {name: '9GAG Funny - Hot', url: 'https://9gag.com/funny/hot'}
+        - {name: '9GAG Gaming - Fresh', url: 'https://9gag.com/gaming/fresh'}
+        - {name: '9GAG Gaming - Hot', url: 'https://9gag.com/gaming/hot'}
+        - {name: '9GAG GIF - Fresh', url: 'https://9gag.com/gif/fresh'}
+        - {name: '9GAG GIF - Hot', url: 'https://9gag.com/gif/hot'}
+        - {name: '9GAG Girl - Fresh', url: 'https://9gag.com/girl/fresh'}
+        - {name: '9GAG Girl - Hot', url: 'https://9gag.com/girl/hot'}
+        - {name: '9GAG Girly Things - Fresh', url: 'https://9gag.com/girly/fresh'}
+        - {name: '9GAG Girly Things - Hot', url: 'https://9gag.com/girly/hot'}
+        - {name: '9GAG Game Of Thrones - Fresh', url: 'https://9gag.com/got/fresh'}
+        - {name: '9GAG Game Of Thrones - Hot', url: 'https://9gag.com/got/hot'}
+        - {name: '9GAG Horror - Fresh', url: 'https://9gag.com/horror/fresh'}
+        - {name: '9GAG Horror - Hot', url: 'https://9gag.com/horror/hot'}
+        - {name: '9GAG I Made Dis - Fresh', url: 'https://9gag.com/imadedis/fresh'}
+        - {name: '9GAG I Made Dis - Hot', url: 'https://9gag.com/imadedis/hot'}
+        - {name: '9GAG Movie and TV - Fresh', url: 'https://9gag.com/movie-tv/fresh'}
+        - {name: '9GAG Movie and TV - Hot', url: 'https://9gag.com/movie-tv/hot'}
+        - {name: '9GAG Music - Fresh', url: 'https://9gag.com/music/fresh'}
+        - {name: '9GAG Music - Hot', url: 'https://9gag.com/music/hot'}
+        - {name: '9GAG NSFW - Fresh', url: 'https://9gag.com/nsfw/fresh'}
+        - {name: '9GAG NSFW - Hot', url: 'https://9gag.com/nsfw/hot'}
+        - {name: '9GAG Overwatch - Fresh', url: 'https://9gag.com/overwatch/fresh'}
+        - {name: '9GAG Overwatch - Hot', url: 'https://9gag.com/overwatch/hot'}
+        - {name: '9GAG Relationship - Fresh', url: 'https://9gag.com/relationship/fresh'}
+        - {name: '9GAG Relationship - Hot', url: 'https://9gag.com/relationship/hot'}
+        - {name: '9GAG Satisfying - Fresh', url: 'https://9gag.com/satisfying/fresh'}
+        - {name: '9GAG Satisfying - Hot', url: 'https://9gag.com/satisfying/hot'}
+        - {name: '9GAG Savage - Fresh', url: 'https://9gag.com/savage/fresh'}
+        - {name: '9GAG Savage - Hot', url: 'https://9gag.com/savage/hot'}
+        - {name: '9GAG Sci-Tech - Fresh', url: 'https://9gag.com/science/fresh'}
+        - {name: '9GAG Sci-Tech - Hot', url: 'https://9gag.com/science/hot'}
+        - {name: '9GAG School - Fresh', url: 'https://9gag.com/school/fresh'}
+        - {name: '9GAG School - Hot', url: 'https://9gag.com/school/hot'}
+        - {name: '9GAG Sport - Fresh', url: 'https://9gag.com/sport/fresh'}
+        - {name: '9GAG Sport - Hot', url: 'https://9gag.com/sport/hot'}
+        - {name: '9GAG Superhero - Fresh', url: 'https://9gag.com/superhero/fresh'}
+        - {name: '9GAG Superhero - Hot', url: 'https://9gag.com/superhero/hot'}
+        - {name: '9GAG Timely - Fresh', url: 'https://9gag.com/timely/fresh'}
+        - {name: '9GAG Timely - Hot', url: 'https://9gag.com/timely/hot'}
+        - {name: '9GAG Video - Fresh', url: 'https://9gag.com/video/fresh'}
+        - {name: '9GAG Video - Hot', url: 'https://9gag.com/video/hot'}
+        - {name: '9GAG WTF - Fresh', url: 'https://9gag.com/wtf/fresh'}
+        - {name: '9GAG WTF - Hot', url: 'https://9gag.com/wtf/hot'}
