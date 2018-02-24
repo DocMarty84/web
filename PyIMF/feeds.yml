@@ -31,8 +31,6 @@ gag9:
         - {name: '9GAG Girl - Hot', url: 'https://9gag.com/girl/hot'}
         - {name: '9GAG Girly Things - Fresh', url: 'https://9gag.com/girly/fresh'}
         - {name: '9GAG Girly Things - Hot', url: 'https://9gag.com/girly/hot'}
-        - {name: '9GAG Game Of Thrones - Fresh', url: 'https://9gag.com/got/fresh'}
-        - {name: '9GAG Game Of Thrones - Hot', url: 'https://9gag.com/got/hot'}
         - {name: '9GAG Horror - Fresh', url: 'https://9gag.com/horror/fresh'}
         - {name: '9GAG Horror - Hot', url: 'https://9gag.com/horror/hot'}
         - {name: '9GAG I Made Dis - Fresh', url: 'https://9gag.com/imadedis/fresh'}
