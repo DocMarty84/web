@@ -1,0 +1,3 @@
+[submodule "koozic-hugo/themes/universal"]
+	path = koozic-hugo/themes/universal
+	url = https://github.com/devcows/hugo-universal-theme

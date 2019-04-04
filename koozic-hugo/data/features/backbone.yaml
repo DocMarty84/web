@@ -1,0 +1,4 @@
+weight: 6
+name: "Awesome Backbone"
+icon: "fa fa-users"
+description: "KooZic uses a light version of [Odoo](https://odoo.com) as a backbone. We take advantage of the robustness of the software to focus on one task: develop a music and video streaming software."

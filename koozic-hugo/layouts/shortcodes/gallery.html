@@ -1,0 +1,21 @@
+{{ $pathURL := .Get "pathURL" }}
+{{ $path := .Get "path" }}
+{{ $files := readDir $path }}
+{{ $scratch := newScratch }}
+
+{{ $scratch.Set "i" 0 }}
+{{ range $files }}
+    {{ if eq (mod ($scratch.Get "i") 3) 0 }}
+    <div class="row">
+    {{ end }}
+        <div class="col-md-4">
+            <a href="{{ $pathURL }}{{ .Name | relURL }}" target="new">
+                <img src="{{ $pathURL }}{{ .Name | relURL }}" alt="{{ .Name }}" class="img-responsive"/>
+            </a>
+        </div>
+    {{ if or (eq (mod ($scratch.Get "i") 3) 2) (eq ($scratch.Get "i") (sub (len $.Site.Data.see_more) 1 )) }}
+    </div>
+    <br/>
+    {{ end }}
+    {{ $scratch.Set "i" (add ($scratch.Get "i") 1) }}
+{{ end }}

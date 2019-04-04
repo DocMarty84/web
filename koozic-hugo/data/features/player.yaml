@@ -1,0 +1,4 @@
+weight: 5
+name: "HTML5 Player"
+icon: "fa fa-play"
+description: "Uses [howler.js](https://howlerjs.com/) and [Clappr](http://clappr.io/), simple yet powerful audio and video tools. They take advantage of your browser media player capabilities without third-party plugins."
