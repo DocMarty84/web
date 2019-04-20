@@ -1,0 +1,16 @@
+baseurl = "https://15minutesoffame.be/nico/blog3"
+title = "15 Minutes of Fame"
+author = "Marty"
+canonifyurls = true
+languageCode = "fr-fr"
+paginate = 10
+
+theme = ["my"]
+disqusShortname = "devcows"
+
+[taxonomies]
+    tag = "tags"
+    archive = "archives"
+
+[params]
+    defaultDescription = "Et si on se tournait vers les alternatives ?"

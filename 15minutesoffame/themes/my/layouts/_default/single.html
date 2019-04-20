@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                {{ .Content }}
+            </div>
+            {{ if .Site.DisqusShortname }}
+                <div class="disqus-comments">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="column is-3">
+        {{ partial "widget-tags.html" . }}<br>
+        {{ partial "widget-recent.html" . }}<br>
+        {{ partial "widget-related.html" . }}<br>
+        {{ partial "widget-archives.html" . }}
+    </div>
+</div>
+
+{{ end }}

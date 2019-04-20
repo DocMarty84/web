@@ -1,0 +1,29 @@
+{{ if eq .Type "article" }}
+<section class="hero-img is-link is-small">
+{{ else }}
+<section class="hero-img is-link is-medium">
+{{ end }}
+    <div class="dark-mask"></div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {{ if eq .Type "article" }}
+            <h1 class="title">
+            {{ else }}
+            <h1 class="title is-size-1">
+            {{ end }}
+                {{ if eq .Type "tags" }}
+                    #{{ .Title }}
+                {{ else if eq .Type "archives" }}
+                    Archive {{ .Title }}
+                {{ else }}
+                    {{ .Title }}
+                {{ end }}
+            </h1>
+            <h2 class="subtitle">
+                {{ if eq .Type "article" }}
+                    {{ .Date.Format "2 January 2006" }} &middot;&nbsp;{{ .ReadingTime }} minutes
+                {{ end }}
+            </h2>
+        </div>
+    </div>
+</section>
