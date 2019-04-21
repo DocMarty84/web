@@ -1,0 +1,4 @@
+weight: 4
+name: "Any music or video format"
+icon: "fas fa-file"
+description: "The media is transcoded on-the-fly! MP3? OGG? FLAC? MKV? Doesn’t matter: KooZic takes care of all of them thanks to [FFmpeg](https://ffmpeg.org/)!"

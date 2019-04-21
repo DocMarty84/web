@@ -1,0 +1,16 @@
+baseurl = "https://koozic.net"
+title = "KooZic"
+author = "Marty"
+canonifyurls = true
+paginate = 5
+
+theme = ["my"]
+
+[taxonomies]
+    archive = "archives"
+
+[params]
+    subtitle = "A media streaming server based on Odoo"
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"

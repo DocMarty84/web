@@ -1,0 +1,14 @@
+{{ range $index, $element := sort .Site.Data.gallery "weight" }}
+{{ if eq (mod $index 3) 0 }}
+    <div class="columns">
+{{ end }}
+        <div class="column is-4">
+            <a href="{{ $element.image }}" target="new">
+                <img src="{{ $element.image }}" alt="{{ $element.title }}" class="img-responsive"/>
+            </a>
+            <p class="has-text-centered">{{ $element.description }}</p>
+        </div>
+{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.gallery) 1 )) }}
+    </div>
+{{ end }}
+{{ end }}

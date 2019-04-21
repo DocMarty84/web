@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+    {{ partial "head" . }}
+    <body class="has-navbar-fixed-top">
+        {{ partial "navbar" . }}
+        {{ if eq .Kind "home" }}
+            {{ partial "home-hero" . }}
+        {{ else }}
+            {{ partial "hero" . }}
+        {{ end }}
+        <div class="container">
+            <div class="section">
+            {{ block "main" . }}{{ end }}
+            </div>
+        </div>
+        {{ if eq .Kind "home" }}
+            {{ partial "home-cta" . }}
+        {{ end }}
+        {{ partial "footer" . }}
+    </body>
+</html>

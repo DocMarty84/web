@@ -1,0 +1,24 @@
+{{ if gt (len .Site.Data.features) 0 }}
+
+<br>
+<br>
+<br>
+
+{{ range $index, $element := sort .Site.Data.features "weight" }}
+{{ if eq (mod $index 3) 0 }}
+    <div class="columns">
+{{ end }}
+        <div class="column is-4 has-text-centered">
+            <span class="icon is-large has-text-primary box">
+                <i class="{{ $element.icon }}"></i>
+            </span>
+            <h1 class="title is-5">{{ $element.name }}</h1>
+            <p class="has-text-centered has-text-grey">{{ $element.description | markdownify }}</p>
+            <br>
+            <br>
+        </div>
+{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.gallery) 1 )) }}
+    </div>
+{{ end }}
+{{ end }}
+{{ end }}

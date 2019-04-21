@@ -1,0 +1,19 @@
+<section class="hero-img main is-link is-small">
+    <div class="dark-mask"></div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                {{ if eq .Type "archives" }}
+                    Archive {{ .Title }}
+                {{ else }}
+                    {{ .Title }}
+                {{ end }}
+            </h1>
+            <h2 class="subtitle">
+                {{ if and (eq .Section "post") (ne .Kind "section") }}
+                    {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
+                {{ end }}
+            </h2>
+        </div>
+    </div>
+</section>
