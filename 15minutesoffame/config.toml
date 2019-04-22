@@ -1,4 +1,4 @@
-baseurl = "https://15minutesoffame.be/nico/blog3"
+baseurl = "https://15minutesoffame.be/nico/blog"
 title = "15 Minutes of Fame"
 author = "Marty"
 canonifyurls = true
@@ -6,7 +6,7 @@ languageCode = "fr-fr"
 paginate = 10
 
 theme = ["my"]
-disqusShortname = "devcows"
+disqusShortname = "15minutesoffame"
 
 [taxonomies]
     tag = "tags"
