@@ -1,4 +1,0 @@
-weight: 1
-name: "Free & Open-Source"
-icon: "fa fa-linux"
-description: "Relies on [Odoo](https://odoo.com), published under LGPL license, [OOMusic](https://github.com/docmarty84/oomusic) and [OOVideo](https://github.com/docmarty84/oomvideo), published under MIT license."
