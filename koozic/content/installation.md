@@ -4,7 +4,7 @@ title = "Installation"
 
 KooZic uses Python 3.5+, relies on PostgreSQL as a database system and FFmpeg for music
 transcoding. It uses as a core system the Odoo software. KooZic is being extensively tested on
-Ubuntu 16.04. However, it should work on any Linux distribution without much trouble.
+Ubuntu 18.04. However, it should work on any Linux distribution without much trouble.
 
 In case of problem, check the
 [Odoo installation guide](https://www.odoo.com/documentation/12.0/setup/install.html), as well as
