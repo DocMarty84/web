@@ -1,7 +1,7 @@
 +++
 title = "KooZic : sortie de la v2.2.0"
 date = "2019-08-16T03:00:00+02:00"
-tags = ["odoo", "streaming"]
+tags = ["odoo", "streaming", "planet"]
 archives = "2019"
 type = "article"
 +++
