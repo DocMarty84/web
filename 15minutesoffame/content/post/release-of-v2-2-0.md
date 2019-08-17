@@ -6,6 +6,8 @@ archives = "2019"
 type = "article"
 +++
 
+[KooZic](https://koozic.net/), le serveur de musique basé sur Odoo sort aujourd'hui en v2.2.0.
+
 Plusieurs discussions sur les médias sociaux ont mené au développement de nouvelles fonctionnalités
 intégrées dans la nouvelle v2.2.0. Avant de les passer en revue, c'est avec fierté que nous
 annonçons la naissance de... la [documentation officielle](https://doc.koozic.net/) ! Certaines
