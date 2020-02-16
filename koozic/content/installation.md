@@ -7,7 +7,7 @@ transcoding. It uses as a core system the Odoo software. KooZic is being extensi
 Ubuntu 18.04. However, it should work on any Linux distribution without much trouble.
 
 In case of problem, check the
-[Odoo installation guide](https://www.odoo.com/documentation/12.0/setup/install.html), as well as
+[Odoo installation guide](https://www.odoo.com/documentation/13.0/setup/install.html), as well as
 the [FFmpeg](https://ffmpeg.org/download.html) documentation. Windows is not supported, while it
 should be possible to make it work on OSX.
 
@@ -24,7 +24,7 @@ An installation script is provided to automatize installation, un-installation a
 In a terminal, run the following:
 
 ```
-wget https://raw.githubusercontent.com/DocMarty84/koozic_install/v2/koozic_install.py -O koozic_install.py
+wget https://raw.githubusercontent.com/DocMarty84/koozic_install/v3/koozic_install.py -O koozic_install.py
 sudo python3 koozic_install.py install
 ```
 
@@ -49,10 +49,10 @@ folders. The script will:
 
 The following platforms are supported:
 
--   Ubuntu 18.04 & 16.04 (and derivatives, such as Linux Mint)
--   Debian 9
--   Fedora 29 (do not forget to check your SELinux configuration)
--   CentOS 7.6 (Python 3 must be installed)
+-   Ubuntu 18.04 (and derivatives, such as Linux Mint)
+-   Debian 10
+-   Fedora 31 (do not forget to check your SELinux configuration)
+-   OpenSUSE 15.1
 
 ### Don't like it?
 

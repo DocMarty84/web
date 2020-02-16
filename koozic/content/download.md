@@ -6,7 +6,7 @@ title = "Download & Apps"
 
 ### Latest stable release
 
-The latest version is [KooZic v2.2.0](https://github.com/DocMarty84/koozic/releases/latest). Check
+The latest version is [KooZic v3.0.0](https://github.com/DocMarty84/koozic/releases/latest). Check
 the [installation instructions](/installation/) for an automated installation!
 
 ### Development version
