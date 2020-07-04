@@ -3,7 +3,7 @@
 Quickstart
 ==========
 
-KooZic uses Python 3.5+, relies on PostgreSQL as a database system and FFmpeg for music transcoding.
+KooZic uses Python 3.6+, relies on PostgreSQL as a database system and FFmpeg for music transcoding.
 It uses as a core system the Odoo software. It should work on any GNU/Linux distribution as well as
 OSX. Unfortunately, windows is not supported.
 
@@ -15,7 +15,7 @@ Automatic script
 An installation script is provided to automatize installation, un-installation and upgrade. The
 following OS are supported with the script:
 
-* Ubuntu 18.04
+* Ubuntu 20.04 / 18.04
 * Debian 10
 * Fedora 31
 * OpenSUSE 15.1
