@@ -64,6 +64,10 @@ Fields
    Dynamic
       If activated, tracks will be automatically added based on the Smart Playlist.
 
+   Maximum Tracks
+      If set (value different from zero), the oldest track of a dynamic playlist is removed when a
+      new track is added. This allows creating 'infinite' playlists.
+
    Current
       Current playlist being played.
 
@@ -91,6 +95,50 @@ Fields
       'obispo' (translate: it plays pop songs, but not Céline Dion)
 
       .. image:: /images/custom_domain_2.png
+
+   Custom Order
+      When the smart playlist option is set to 'Custom', it is possible to set one or more sorting
+      fields. When the order is not set, the tracks matching the domain are selected randomly in
+      order to be added to the playlist. When the order is set, the tracks matching the domain are
+      first sorted following the order, then the first track is added to the playlist.
+
+      The combination of sorting fields is possible, as well as the descending order thanks to the
+      ``desc`` keyword.
+
+      It is possible to sort by any field available on the tracks, but the most relevant are:
+
+      +------------------+------------------+
+      |Field Name        |Field Label       |
+      +==================+==================+
+      |create_date       |Create Date       |
+      +------------------+------------------+
+      |duration          |Duration          |
+      +------------------+------------------+
+      |last_play         |Last Played       |
+      +------------------+------------------+
+      |last_skip         |Last Skipped      |
+      +------------------+------------------+
+      |play_count        |Play Count        |
+      +------------------+------------------+
+      |play_skip_ratio   |Play/Skip Ratio   |
+      +------------------+------------------+
+      |rating            |Rating            |
+      +------------------+------------------+
+      |skip_count        |Skip Count        |
+      +------------------+------------------+
+      |star              |Favorite          |
+      +------------------+------------------+
+      |track_number      |Track #           |
+      +------------------+------------------+
+
+      *Example 1*: sort by duration, meaning that we select the shortest tracks first: ``duration``
+
+      *Example 2*: sort by descending Play/Skip Ratio, meaning that we select the most played tracks
+      first: ``play_skip_ratio desc``
+
+      *Example 3*: sort by descending rating and ascending play count, meaning that we select the
+      highest rated tracks first, but in case of identical rating we select the least played tracks:
+      ``rating desc, play_count``
 
    Tracks
       The list of tracks currently in the playlist

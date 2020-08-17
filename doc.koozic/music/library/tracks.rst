@@ -55,7 +55,20 @@ Fields
       These can be used to add information not given in the regular ID3 tags.
 
    Play Count
+      A track is considered played if playback >= 50 % of the track duration.
+
+   Skip Count
+      A track is considered skipped if 'Next' or 'Previous' is clicked and playback is < 50 % of the
+      track duration.
+
+   Play/Skip Ratio
+      The ratio between the two latter counters. If the skip counter is zero, the ratio is the play
+      counter (to avoid zero division).
+
+      Only in :ref:`debug_mode`.
+
    Last Played
+   Last Skipped
    Bitrate (kbps)
    File Size (MiB)
    Path

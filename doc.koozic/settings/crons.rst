@@ -55,6 +55,12 @@ Actions
 
       Execute Every: 2 minutes
 
+   oomusic.convert.toggle
+      Deactivate the :term:`oomusic.convert` scheduled action if no running converter is found. This
+      is to prevent unnecessary cache invalidation.
+
+      Execute Every: 1 day
+
    oomusic.scan.folder
       Scan the :ref:`folders` for any new file.
 
@@ -65,4 +71,4 @@ Actions
       folders might be flagged as being scanned while they aren't anymore. This cleans up such
       situation.
 
-      Execute Every: 10 minutes
+      Execute Every: 3 hours
