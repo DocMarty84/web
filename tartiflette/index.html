@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soirée Navet-Tartiflette</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-warning">
+        <div class="hero-body has-text-centered">
+            <p class="title is-1">
+                Soirée Navet-Tartiflette
+            </p>
+            <p class="subtitle is-3">
+                Édition 2023
+            </p>
+        </div>
+        <div class="hero-foot has-text-centered">
+            <p class="subtitle">
+                Ça commence dans...
+            </p>
+            <nav class="level">
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Jours</p>
+                        <p id="days" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Heures</p>
+                        <p id="hours" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Minutes</p>
+                        <p id="minutes" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Secondes</p>
+                        <p id="seconds" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Millisecondes</p>
+                        <p id="milliseconds" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Microsecondes</p>
+                        <p id="microseconds" id="days" class="title">0</p>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div>
+                        <p class="heading">Nanosecondes</p>
+                        <p id="nanoseconds" class="title">0</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Programme
+            </h1>
+            <div class="content">
+                <ul>
+                    <li>Une tartiflette</li>
+                    <li>Un navet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Set the deadline to November 11th at midnight CET
+        const deadline = new Date("2023-11-11T17:00:00Z");
+        const zeroPad = (num, places) => String(num).padStart(places, '0')
+
+        const days = document.getElementById("days");
+        const hours = document.getElementById("hours");
+        const minutes = document.getElementById("minutes");
+        const seconds = document.getElementById("seconds");
+        const milliseconds = document.getElementById("milliseconds");
+        const microseconds = document.getElementById("microseconds");
+        const nanoseconds = document.getElementById("nanoseconds");
+
+        // Update the countdown every millisecond
+        const countdown = setInterval(function () {
+            // Find the distance between now and the deadline
+            const distance = deadline - Date.now();
+            // const distanceNano = (distance * 10**6 + Math.floor(Math.random() * 10**6));
+
+            // Calculate the days, hours, minutes, and seconds remaining
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
+            const ms = zeroPad(Math.floor(distance % 1000), 3);
+            const rnd1 = zeroPad(Math.floor(Math.random() * 1000), 3);
+            const rnd2 = zeroPad(Math.floor(Math.random() * 1000), 3);
+
+            // If the countdown is over, clear the interval
+            if (distance > 0) {
+                days.innerHTML = `${d}`;
+                hours.innerHTML = `${h}`;
+                minutes.innerHTML = `${m}`;
+                seconds.innerHTML = `${s}`;
+                milliseconds.innerHTML = `${ms}`;
+                microseconds.innerHTML = `${rnd1}`;
+                nanoseconds.innerHTML = `${rnd2}`;
+            } else {
+                clearInterval(countdown);
+            }
+        }, 10); // 10 milliseconds interval
+
+    </script>
+
+</body>
+
+</html>
